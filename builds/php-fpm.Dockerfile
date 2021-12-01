@@ -22,3 +22,7 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local
 RUN composer global require laravel/installer
 
 WORKDIR /var/www
+
+RUN chown -R www-data:www-data /var/www
+
+EXPOSE 9000
