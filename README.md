@@ -33,7 +33,8 @@ Exemplo:
 docker-compose exec app composer install
 ```
 2. Gerador de projetos Laravel se encontra instalado dentro do container app. Para criar um projeto Laravel base digite:<br>
-2.1. Para excluir o que há originalmente:
+<br>
+4.1. Para excluir o que há originalmente:
 ```
 docker-compose exec app rm -R public
 ```
