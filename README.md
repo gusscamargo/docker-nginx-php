@@ -15,7 +15,7 @@ Roda aplicações PHP com possibilidade de conexão a um banco de dados MySQL e 
 
 ## Como usar?
 1. Clone ou dê um fork no repositorio.
-2. Jogue sua aplicação dentro da pasta /src.
+2. Jogue sua aplicação dentro da pasta /src (arquivo index.php deve estar dentro da pasta /src/public).
 3. Digite no terminal:
 ```
 docker-compose up -d
