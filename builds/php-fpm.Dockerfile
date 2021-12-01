@@ -19,10 +19,12 @@ RUN docker-php-ext-install pdo_mysql mbstring exif pcntl bcmath gd
 # Instalar a ultima versão do composer
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
+# Instala o instalador do Framework Laravel
 RUN composer global require laravel/installer
 
 WORKDIR /var/www
 
+# Atualiza as permissões para funcionar bem com o Nginx
 RUN chown -R 33:33 /var/www
 
 EXPOSE 9000
