@@ -24,9 +24,14 @@ docker-compose up -d
 4. Acesse [localhost](http://localhost/) para acessar a aplicação ou [127.0.0.1:8080](http://127.0.0.1:8080) para acessar o PhpMyAdmin
 
 ## Notas
-1. Composer esta instaldo do dentro do container app
-2. Gerador de projetos Laravel se encontra instalado dentro do container app. Para criar um projeto Laravel base digite:
+1. Composer esta instaldo do dentro do container app. Para uso digite:
+```
+docker-compose exec app composer <comando composer>
+```
+3. Gerador de projetos Laravel se encontra instalado dentro do container app. Para criar um projeto Laravel base digite:
 ```
 docker-compose exec app rm -R public
+```
+```
 docker-compose exec app laravel new .
 ```
