@@ -28,6 +28,10 @@ docker-compose up -d
 ```
 docker-compose exec app composer <comando composer>
 ```
+Exemplo:
+```
+docker-compose exec app composer install
+```
 3. Gerador de projetos Laravel se encontra instalado dentro do container app. Para criar um projeto Laravel base digite:
 ```
 docker-compose exec app rm -R public
