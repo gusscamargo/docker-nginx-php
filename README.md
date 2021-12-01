@@ -4,7 +4,8 @@
 Projeto publico para manutenção de um template de ambiente de desenvolvimento Docker para trabalhos com PHP e MySQL.
 
 ## O que ela faz?
-Roda aplicações PHP com possibilidade de conexão a um banco de dados MySQL e o gerenciador de banco de dados PhpMyAdmin.
+- Roda aplicações PHP com possibilidade de conexão a um banco de dados MySQL e o gerenciador de banco de dados PhpMyAdmin.
+- Ambiente construido a priori para rodar uma aplicação Laravel, logo, o Framework Laravel funciona em cima deste ambiente.
 
 ## O que compõe o Projeto?
 1. Docker
