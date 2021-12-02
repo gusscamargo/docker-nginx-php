@@ -23,7 +23,8 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local
 RUN composer global require laravel/installer
 
 # Instala o instalador do Framework symfony 
-RUN curl -sS https://get.symfony.com/cli/installer  | php -- --install-dir=/usr/local/bin --filename=symfony
+RUN curl -sS https://get.symfony.com/cli/installer  | bash
+RUN cp /root/.symfony/bin/symfony /usr/local/bin
 
 WORKDIR /var/www
 

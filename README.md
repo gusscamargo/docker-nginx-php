@@ -5,7 +5,7 @@ Projeto publico para manutenção de um template de ambiente de desenvolvimento 
 
 ## O que ela faz?
 - Roda aplicações PHP com possibilidade de conexão a um banco de dados MySQL e o gerenciador de banco de dados PhpMyAdmin.
-- Ambiente construido a priori para rodar uma aplicação Laravel, logo, o Framework Laravel funciona em cima deste ambiente.
+- Ambiente construido a priori para rodar uma aplicação Laravel e Symfony.
 
 ## O que compõe o Projeto?
 1. Docker
@@ -32,14 +32,18 @@ Exemplo:
 ```
 docker-compose exec app composer install
 ```
-2. Gerador de projetos Laravel se encontra instalado dentro do container app. Para criar um projeto Laravel base digite:<br>
+2. Os geradoradores de projetos Laravel e Symfony se encontram instalados dentro do container app. Para criar um projeto Laravel base digite:<br>
 
 
 2.1. Para excluir o que há originalmente:
 ```
 docker-compose exec app rm -R public
 ```
-2.2. Para instalar o projeto laravel base:
+2.2. Para instalar o projeto Laravel base:
 ```
 docker-compose exec app laravel new .
+```
+2.3. Para instalar o projeto Symfony base:
+```
+docker-compose exec app symfony new .
 ```
