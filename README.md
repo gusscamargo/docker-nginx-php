@@ -41,7 +41,7 @@ docker-compose exec app rm -R public
 ```
 2.2. Para instalar o projeto Laravel base:
 ```
-docker-compose exec app laravel new .
+docker-compose exec app composer create-project laravel/laravel .
 ```
 2.3. Para instalar o projeto Symfony base:
 ```
