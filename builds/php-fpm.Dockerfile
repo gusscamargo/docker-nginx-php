@@ -26,6 +26,9 @@ RUN composer global require laravel/installer
 RUN curl -sS https://get.symfony.com/cli/installer  | bash
 RUN cp /root/.symfony/bin/symfony /usr/local/bin
 
+# Correção bug laravel
+RUN export PATH="~/.composer/vendor/bin:$PATH" 
+
 WORKDIR /var/www
 
 # Atualiza as permissões para funcionar bem com o Nginx
