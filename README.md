@@ -1,4 +1,4 @@
-# docker-nginx-php-mysql
+# Ambiente de desenvolvimento docker com nginx, php e mysql
 
 ## Objetivo
 Projeto publico para manutenção de um template de ambiente de desenvolvimento Docker para trabalhos com PHP e MySQL.
